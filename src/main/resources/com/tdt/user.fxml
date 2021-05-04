@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="277.0"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="com.tdt.controllers.UserController">
+    <children>
+        <Label alignment="CENTER" prefHeight="17.0" prefWidth="49.0" text="Nom : "/>
+        <TextField fx:id="t_lastname"/>
+        <Label alignment="CENTER" text="Prenom : "/>
+        <TextField fx:id="t_firstname"/>
+        <Label alignment="CENTER" text="Solde : "/>
+        <TextField fx:id="t_amount"/>
+        <Label alignment="CENTER" text="Mot de passe : "/>
+        <PasswordField fx:id="p_password"/>
+        <Button fx:id="b_save" mnemonicParsing="false" onAction="#buttonSaveClicked" text="Enregistrer"/>
+    </children>
+</VBox>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" id="tab-content" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308"
+      maxWidth="1.7976931348623157E308" spacing="2.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+      fx:controller="com.tdt.controllers.CommandController">
+    <padding>
+        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+    </padding>
+    <children>
+        <HBox alignment="TOP_RIGHT" maxWidth="1.7976931348623157E308">
+            <children>
+                <Button fx:id="bt_refresh" mnemonicParsing="false" text="Rafraichir">
+                    <HBox.margin>
+                        <Insets right="5.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="bt_add_command" contentDisplay="RIGHT" mnemonicParsing="false" text="Ajouter"
+                        textAlignment="RIGHT"/>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+        </HBox>
+        <TableView fx:id="table" editable="true" fixedCellSize="-10.0" maxHeight="1.7976931348623157E308"
+                   maxWidth="1.7976931348623157E308">
+            <columns>
+                <TableColumn fx:id="tc_numero" maxWidth="50" minWidth="50.0" prefWidth="-1.0" text="N°"/>
+                <TableColumn fx:id="tc_content" maxWidth="1.7976931348623157E308" minWidth="80.0" prefWidth="-1.0"
+                             text="Contenue"/>
+                <TableColumn fx:id="tc_date" maxWidth="1.7976931348623157E308" minWidth="80.0" prefWidth="-1.0"
+                             text="Date"/>
+                <TableColumn fx:id="tc_user" maxWidth="1.7976931348623157E308" minWidth="80.0" prefWidth="-1.0"
+                             text="Utilisateur"/>
+                <TableColumn fx:id="tc_price" maxWidth="1.7976931348623157E308" minWidth="80.0" prefWidth="-1.0"
+                             text="Prix"/>
+                <TableColumn fx:id="tc_status" maxWidth="1.7976931348623157E308" minWidth="80.0" prefWidth="-1.0"
+                             text="Status"/>
+                <TableColumn fx:id="tc_operation" maxWidth="1.7976931348623157E308" minWidth="80.0" prefWidth="-1.0"
+                             text="Opération"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+    </children>
+</VBox>

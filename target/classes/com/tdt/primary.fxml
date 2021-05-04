@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" id="pane" alignment="CENTER" maxHeight="1.7976931348623157E308"
+      maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" spacing="20.0"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="com.tdt.controllers.PrimaryController">
+    <children>
+        <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" rotateGraphic="true"
+                 tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Commandes">
+                    <content>
+                        <fx:include source="command.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Pizzas">
+                    <content>
+                        <fx:include source="pizza.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Utilisateur">
+                    <content>
+                        <fx:include source="users.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Livreurs">
+                    <content>
+                        <fx:include source="delivery_men.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Véhicules">
+                    <content>
+                        <fx:include source="vehicule.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Comptabilités">
+                    <content>
+                        <fx:include source="accounting.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Statistiques">
+                    <content>
+                        <fx:include source="statistics.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Gestion"/>
+            </tabs>
+        </TabPane>
+    </children>
+</VBox>

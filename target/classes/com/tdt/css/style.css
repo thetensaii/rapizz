@@ -1,0 +1,80 @@
+.VBox {
+    -fx-background-color:#000;
+}
+.body{
+}
+#pane{
+    -fx-background-color: #293145;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+.tab-pane{
+    -fx-background-color: #293145;
+    -fx-text-fill: white;
+}
+.button{
+    -fx-background-color: #5bc0de;
+    -fx-text-fill: white;
+}
+.button:hover {
+    -fx-background-color: #5bc0de;
+    -fx-font-weight: bold
+}
+.tab{
+    -fx-background-color: #303950;
+    -fx-text-fill: white;
+}
+.tab-header-background {
+    -fx-background-color: #293145;
+    -fx-text-fill: white;
+}
+.tab-label {
+    -fx-text-fill: white ;
+}
+
+#tab-content{
+    -fx-background-color: #303950;
+}
+
+.label{
+    -fx-text-fill: white ;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: #293145;
+    -fx-text-fill: white;
+}
+.table-view {
+    -fx-table-cell-border-color: #404962;
+}
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #303952;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #303a53;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+.box{
+    -fx-border-width: 1;
+    -fx-border-color: #5bc0de;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}

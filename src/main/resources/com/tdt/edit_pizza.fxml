@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/8.0.172-ea"
+      fx:controller="com.tdt.controllers.ModifyPizzaController">
+    <children>
+        <Label text="Nom"/>
+        <TextField fx:id="nameField" alignment="CENTER">
+            <VBox.margin>
+                <Insets left="10.0"/>
+            </VBox.margin>
+        </TextField>
+        <Label text="Prix">
+            <VBox.margin>
+                <Insets top="15.0"/>
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="priceField">
+            <VBox.margin>
+                <Insets left="10.0"/>
+            </VBox.margin>
+        </TextField>
+        <Label text="Ingrédients">
+            <VBox.margin>
+                <Insets top="15.0"/>
+            </VBox.margin>
+        </Label>
+        <ListView fx:id="ingredientsList" prefHeight="97.0">
+            <VBox.margin>
+                <Insets left="10.0"/>
+            </VBox.margin>
+        </ListView>
+        <HBox alignment="CENTER" maxWidth="1.7976931348623157E308">
+            <children>
+                <ChoiceBox fx:id="ingredientChoice" prefWidth="150.0"/>
+                <Button fx:id="addIngredient" mnemonicParsing="false" text="+"/>
+                <Button fx:id="removeIngredient" layoutX="202.0" layoutY="10.0" mnemonicParsing="false" text="-"/>
+            </children>
+        </HBox>
+        <Button fx:id="edit" mnemonicParsing="false" text="Ajouter">
+            <VBox.margin>
+                <Insets top="20.0"/>
+            </VBox.margin>
+        </Button>
+    </children>
+    <padding>
+        <Insets bottom="10.0" right="10.0" top="10.0"/>
+    </padding>
+</VBox>
